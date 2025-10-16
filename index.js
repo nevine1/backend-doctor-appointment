@@ -45,10 +45,7 @@ app.use('/api/users', userRoute);
 app.use('/api/payment', paymentRoute);
 
 
-/* app.get('/', (req, res) => {
-    res.send("app is working")
-}) */
 //starting express app
-app.listen(port, () => {
+app.listen(port, '0.0.0.0' , () => {
     console.log('Server is Starting at port #: ', port)
 });
